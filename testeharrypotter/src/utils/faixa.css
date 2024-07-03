@@ -1,28 +1,28 @@
 .faixa {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;   
     gap: 10px;
 }
 
 .faixa img{
     width: 72px;
     height: 84px;
-    margin-right: -20px;
 }
 
 .texto {
-    width: 280px;
     color: rgba(166, 149, 90, 1);
     font-family: Arial;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
     font-family: Arial;
+    white-space: nowrap;    
+    margin-right: 30px;
 }
 
 .faixinha {
     background-color: rgba(166, 149, 90, 1);
-    height: 2px;
+    height: 3px;
     width: 100%;
 }
