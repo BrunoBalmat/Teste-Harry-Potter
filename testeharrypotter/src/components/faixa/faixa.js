@@ -1,7 +1,5 @@
 import './faixa.css'
 
-
-
 export default function Faixa({texto}) {
     return(
         <div className="faixa" >

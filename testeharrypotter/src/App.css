@@ -60,13 +60,32 @@
   flex-wrap: wrap;
 }
 
-.botoesCasas button {
-  border: none;
-  margin-bottom: 32px;
-  cursor: pointer;
-}
-
-.botoesCasas button img{
+.linkscasas img{
   margin-bottom: -4px;
   width: 100%;
+}
+
+@media (max-width: 1278px) {
+  .linkscasas img{
+    width: 420px;
+  }
+}
+@media (max-width: 850px) {
+  .linkscasas img{
+    width: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .linkscasas img{
+    width: 100%;
+  }
+  .harrylogo{
+    width: 90%;
+  }
+  .estrutura{
+    text-align: center;
+  }
+  .faixa{
+    margin-left: 20px;
+  }
 }

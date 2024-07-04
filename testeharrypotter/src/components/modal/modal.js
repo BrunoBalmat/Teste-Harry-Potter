@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useEffect, useRef }from "react";
 import "./modal.css"
 
 export default function Modal({ persona, setPersona }) {
+
+    // const modalRef = useRef(null)
+
+    // const clickFora = (event) => {
+    //     if (modalRef.current && !modalRef.current.contains(event.target)) {
+    //         setPersona("");
+    //     }
+    // };
+
+    // useEffect(() => {
+    //     if (persona) {
+    //         document.addEventListener("mousedown", clickFora);
+    //     } else {
+    //         document.removeEventListener("mousedown", clickFora);
+    //     }
+    //     return () => {
+    //         document.removeEventListener("mousedown", clickFora);
+    //     };
+
+    // }, [persona]);
+
     if (persona) {
         return (
-            <div className="container">
-                <div className="janela">
-
+            <div className="container bruno" onClick={() =>{setPersona('')}} >
+                <div className="janela" >
                     <div className='modal-pai'>
                         <div key={persona.name} className="modal-filho">
-                            <img className="modal-imagem" src={persona.image ? persona.image : './fundocard.jpg'} alt={persona.name} />
+                            <img className="modal-imagem" 
+                            src={persona.image?persona.image:'./fundocard.jpg'} 
+                            alt={persona.name}/>
                         </div>
                         <div className="modal-texto">
                             <button className="fechar" onClick={() => setPersona('')}>x</button>

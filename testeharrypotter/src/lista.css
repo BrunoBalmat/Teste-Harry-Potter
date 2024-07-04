@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    width: 100%;
+    background-image: url('../public/background1.png');
+    background-size: 65%;
+}
+
+.header {
+    text-align: center;
+    height: 103px;
+    background-color: rgba(166, 149, 90, 1);
+}
+
+.header img {
+    padding-top: 15px;
+}
+
+.conteudo {
+    padding: 4%;
+}
+
+.personagens-pai {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 4%;
+    gap: 50px;
+}
+
+.personagem-filho {
+    width: 20%;
+    text-align: center;
+    font-size: 24px;    
+    font-weight: 400;
+    width: 186px;
+    color: rgba(166, 149, 90, 1);  
+    margin-bottom: 50px;
+    cursor: pointer;
+    
+}
+
+.personagem-imagem {
+    width: 160px;
+    height: 227px;
+    border: 2px solid rgba(166, 149, 90, 1);
+
+}
+
+@media (max-width: 450px) {
+    .personagens-pai {
+      justify-content: center;
+    }
+    .personagem-filho{
+        margin-bottom: 20px;
+    }
+  }
